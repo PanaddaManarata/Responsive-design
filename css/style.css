@@ -1,25 +1,47 @@
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-body{background-color: orange; }
-
-
-@media only screen and (min-width:300px ){
-    
-    body{background-color: darkolivegreen}
-    
-}
-
-
-@media only screen and (min-width:768px ){
-    
-    
-    body{background-color: skyblue;}
-    
+body {
+    background-color: orange;
 }
 
 
 
+#medium, #large {
+    display:none; 
+}
+
+@media only screen and (min-width:300px) {
+
+    body {
+        background-color: darkolivegreen
+    }
+
     
     
+    #medium{display: block; }
+
+    #large,#small{
+        display: none; 
+    }
+
+}
+
+
+@media only screen and (min-width:768px) {
+
+
+    body {
+        background-color: skyblue;
+    }
+
+    #small, #medium{
+        display: none; 
+    }
+
+    #large{display: block; }
+    
+    
+
+}
