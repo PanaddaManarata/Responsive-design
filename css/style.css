@@ -8,9 +8,7 @@ body {
 
 
 
-#medium, #large {
-    display:none; 
-}
+
 
 @media only screen and (min-width:300px) {
 
@@ -18,15 +16,15 @@ body {
         background-color: darkolivegreen
     }
 
+    #small{width: 66%;} 
+    #medium{width: 33%;}
+    #large{width: 100%; }
     
     
-    #medium{display: block; }
-
-    #large,#small{
-        display: none; 
+   
     }
 
-}
+
 
 
 @media only screen and (min-width:768px) {
@@ -36,11 +34,12 @@ body {
         background-color: skyblue;
     }
 
-    #small, #medium{
-        display: none; 
-    }
-
-    #large{display: block; }
+     #small{width: 33%;} 
+    #medium{width: 33%;}
+    #large{width: 33%; }
+    
+    
+    div{float: left;}
     
     
 
